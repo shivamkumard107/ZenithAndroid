@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.zenithandroid;
+package com.example.zenithandroid.linechart;
 
 import android.os.Handler;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
+import com.example.zenithandroid.R;
 
 
 public class CardController {

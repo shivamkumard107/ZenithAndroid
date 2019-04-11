@@ -1,4 +1,4 @@
-package com.example.zenithandroid;
+package com.example.zenithandroid.LeaderBoard;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+
+import com.example.zenithandroid.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

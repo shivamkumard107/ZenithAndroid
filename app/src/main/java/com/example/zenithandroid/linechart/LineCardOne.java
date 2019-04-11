@@ -16,7 +16,6 @@ import com.db.chart.model.LineSet;
 import com.db.chart.renderer.AxisRenderer;
 import com.db.chart.tooltip.Tooltip;
 import com.db.chart.view.LineChartView;
-import com.example.zenithandroid.CardController;
 import com.example.zenithandroid.R;
 
 
@@ -31,8 +30,9 @@ public class LineCardOne extends CardController {
 
 	private final String[] mLabels = {"Jan", "Fev", "Mar", "Apr", "Jun", "May", "Jul", "Aug", "Sep"};
 
-	private final float[][] mValues = {{3.5f, 4.7f, 4.3f, 8f, 6.5f, 9.9f, 7f, 8.3f, 7.0f},
-			  {4.5f, 2.5f, 2.5f, 9f, 4.5f, 9.5f, 5f, 8.3f, 1.8f}};
+	private final float[][] mValues = {{3.05f, 4.07f, 4.93f, 8.0f, 6.05f, 9.09f, 7.0f, 8.83f, 7.90f},
+			  {6.45f, 5.5f, 6.5f, 8.00f, 4.05f, 9.05f, 9.5f, 8.33f, 9.18f}, {4.05f, 50.7f, 7.93f, 6.0f, 9.05f, 4.09f, 7.0f, 8.83f, 9.9f},
+			{5.5f, 1.07f, 4.93f, 9.0f, 5.05f, 8.09f, 5.5f, 6.63f, 9.70f}};
 
 	private Tooltip mTip;
 

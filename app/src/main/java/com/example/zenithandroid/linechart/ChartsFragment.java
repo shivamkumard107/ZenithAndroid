@@ -1,4 +1,4 @@
-package com.example.zenithandroid;
+package com.example.zenithandroid.linechart;
 
 
 import android.graphics.Typeface;
@@ -12,9 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.zenithandroid.R;
 import com.example.zenithandroid.linechart.LineCardOne;
-import com.example.zenithandroid.linechart.LineCardThree;
-import com.example.zenithandroid.linechart.LineCardTwo;
 
 
 /**
@@ -39,8 +38,6 @@ public class ChartsFragment extends Fragment {
                 Typeface.createFromAsset(getContext().getAssets(), "Ponsi-Regular.otf"));
 
         (new LineCardOne((CardView) layout.findViewById(R.id.card1), getContext())).init();
-        (new LineCardThree((CardView) layout.findViewById(R.id.card2), getContext())).init();
-        (new LineCardTwo((CardView) layout.findViewById(R.id.card9))).init();
 
         return layout;
     }
