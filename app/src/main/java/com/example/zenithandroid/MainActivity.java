@@ -8,19 +8,23 @@ import android.widget.Button;
 import com.example.zenithandroid.LeaderBoard.LeaderBoardActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button leaderboard, monitor ;
+    private Button leaderboard, monitor, accCheck ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         leaderboard = findViewById(R.id.button);
         monitor = findViewById(R.id.bt_monitor);
+        accCheck = findViewById(R.id.bt_acc);
         leaderboard.setOnClickListener(view  -> {
             Intent i = new Intent(this, LeaderBoardActivity.class);
             startActivity(i);
         });
         monitor.setOnClickListener(someview -> {
             startActivity(new Intent(this, MonitorAct.class));
+        });
+        accCheck.setOnClickListener(view2 -> {
+            startActivity(new Intent(this, UploadAsanActivity.class));
         });
     }
 }

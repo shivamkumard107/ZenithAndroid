@@ -32,10 +32,6 @@ public class ChartsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.charts, container, false);
 
-        ((AppCompatActivity) getActivity()).setSupportActionBar(
-                (Toolbar) layout.findViewById(R.id.toolbar));
-        ((TextView) layout.findViewById(R.id.title)).setTypeface(
-                Typeface.createFromAsset(getContext().getAssets(), "Ponsi-Regular.otf"));
 
         (new LineCardOne((CardView) layout.findViewById(R.id.card1), getContext())).init();
 
