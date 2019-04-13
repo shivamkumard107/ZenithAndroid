@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="600dp"
+    android:layout_marginStart="10sp"
+    android:layout_marginTop="20sp"
+    android:layout_marginEnd="10sp"
+    android:elevation="30sp"
+    app:cardCornerRadius="10sp"
+    android:layout_gravity="center_horizontal"
+    android:backgroundTint="@color/lightGreen">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/yoga_image"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/vrikshasana" />
+        <TextView
+            android:id="@+id/yoga_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga"
+            android:layout_below="@id/yoga_image"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        <TextView
+            android:id="@+id/yoga_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yoga_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+            android:text="Physical and psychological stillness are an absolute necessity to maintain equilibrium in today’s edgy world. There are numerous Yoga postures to help you achieve a state of complete balance when practiced astutely. In this article, we discuss about one such Asana appearing in the balancing series. Vrikshasana (v-rook-shA suh-nuh), also known as the Tree Pose, is a remarkable Asana for improving balance. Its name is derived from the Sanskrit words Vriksha (meaning tree) and Asana (meaning a posture)." />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

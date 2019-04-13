@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UploadAsanActivity"></activity>
-        <activity android:name=".MonitorAct" />
-        <activity android:name=".LeaderBoard.LeaderBoardActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ImageResultActivity" />
+        <activity android:name=".ChooseYogaActivity" />
+        <activity android:name=".UploadAsanActivity" />
+        <activity android:name=".MonitorAct" />
+        <activity android:name=".LeaderBoard.LeaderBoardActivity" />
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 

@@ -28,7 +28,7 @@ public class LineCardOne extends CardController {
 	private final Context mContext;
 
 
-	private final String[] mLabels = {"Jan", "Fev", "Mar", "Apr", "Jun", "May", "Jul", "Aug", "Sep"};
+	private final String[] mLabels = {"01/01", "02/01", "03/01", "04/01", "05/01", "06/01", "07/01", "08/01", "09/01"};
 
 	private final float[][] mValues = {{3.05f, 4.07f, 4.93f, 8.0f, 6.05f, 9.09f, 7.0f, 8.83f, 7.90f},
 			  {6.45f, 5.5f, 6.5f, 8.00f, 4.05f, 9.05f, 9.5f, 8.33f, 9.18f}, {4.05f, 50.7f, 7.93f, 6.0f, 9.05f, 4.09f, 7.0f, 8.83f, 9.9f},

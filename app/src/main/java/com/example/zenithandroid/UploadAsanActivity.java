@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -15,16 +16,22 @@ import com.squareup.picasso.Picasso;
 
 public class UploadAsanActivity extends AppCompatActivity implements
         AdapterView.OnItemSelectedListener {
-    String[] Asan = {"Asan1", "Asan2", "Asan3", "Asan4", "Asan5"};
+    String[] Asan = {"Vrikshasana", "Virabhadrasana", "Utthita Hasta Padangusthasana", "Ardha chandrasana", "Yoga Asan"};
     private static final int PICK_IMAGE_REQUEST = 1;
     private ImageButton image_upload;
     private Uri mImageUri;
+    private Button submit ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_asan);
         image_upload = findViewById(R.id.ib_chooseImage);
+        submit = findViewById(R.id.submitPost);
+        submit.setOnClickListener(view ->{
+            Intent i = new Intent(this, ImageResultActivity.class);
+            startActivity(i);
+        });
         image_upload.setOnClickListener(someview -> {
             openFileChooser();
         });

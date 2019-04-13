@@ -1,17 +1,10 @@
 package com.example.zenithandroid;
 
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 import com.example.zenithandroid.linechart.ChartsFragment;
 import com.example.zenithandroid.linechart.SandboxFragment;
@@ -36,15 +29,17 @@ public class MonitorAct extends AppCompatActivity implements AdapterView.OnItemS
                 android.R.layout.simple_spinner_item);
         mAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        switch (currSpinnerSelection){
-            case 0: mCurrFragment = new ChartsFragment(); break;
-            case 1: mCurrFragment = new SandboxFragment(); break;
+        switch (currSpinnerSelection) {
+            case 0:
+                mCurrFragment = new ChartsFragment();
+                break;
+            case 1:
+                mCurrFragment = new SandboxFragment();
+                break;
         }
 
         getSupportFragmentManager().beginTransaction().add(R.id.container, mCurrFragment).commit();
     }
-
-
 
 
     public void onMenuClick(View view) {
@@ -82,6 +77,7 @@ public class MonitorAct extends AppCompatActivity implements AdapterView.OnItemS
 
 
     @Override
-    public void onNothingSelected(AdapterView<?> parent) {}
+    public void onNothingSelected(AdapterView<?> parent) {
+    }
 
 }

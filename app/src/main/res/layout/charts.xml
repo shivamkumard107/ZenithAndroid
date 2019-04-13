@@ -45,7 +45,7 @@
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="220dp"
                 android:layout_margin="@dimen/card_view_padding"
                 card_view:cardBackgroundColor="#343f57"
                 card_view:cardCornerRadius="@dimen/card_view_roundcorner">
